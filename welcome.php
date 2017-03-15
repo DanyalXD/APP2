@@ -32,11 +32,21 @@ if (!isset($_SESSION['login_user']))
 <a href="uploadRA.php">Upload Risk Assessment</a><br>
 <?php 
 	} 
-	if($_SESSION['accountType'] == "customer"){
-?>
-<a href="uploadBL.php">View Bait Location</a><br>
-<a href="uploadRA.php">View Risk Assessment</a><br>
-<?php 
+	$conn = mysqli_connect("mysql4.gear.host", "app2", "Td2F5SV?46_U", "app2");
+	if ($conn->connect_error) {
+	    die("Connection failed: " . $conn->connect_error);
+	}
+    $cnt = $_SESSION['contract'];
+	$sql = "SELECT * FROM risk WHERE contractNo = '$cnt'";
+	$sql1 = "SELECT * FROM bait WHERE contractNo = '$cnt'";
+	$result = $conn->query($sql);
+	$result1 = $conn->query($sql1);
+    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC);
+
+if($_SESSION['accountType'] == "customer"){
+	echo "<a href='".$row["risk"]."'>View Risk Assessment</a><br>";
+	echo "<a href='".$row["bait"]."'>View Bait Location</a><br>";
 	} 
 ?>
 <a href="cosh.php">Coshh</a><br>
