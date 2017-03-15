@@ -17,7 +17,7 @@
       $count = mysqli_num_rows($result);
 
       if (!$count) {
-         return 0;
+         echo "lol";
       }
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
