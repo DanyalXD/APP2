@@ -46,7 +46,7 @@ if (!isset($_SESSION['login_user']))
 
 if($_SESSION['accountType'] == "customer"){
 	echo "<a href='".$row["risk"]."'>View Risk Assessment</a><br>";
-	echo "<a href='".$row["bait"]."'>View Bait Location</a><br>";
+	echo "<a href='".$row1["bait"]."'>View Bait Location</a><br>";
 	} 
 ?>
 <a href="cosh.php">Coshh</a><br>
