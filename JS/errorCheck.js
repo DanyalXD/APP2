@@ -9,7 +9,7 @@ function validateLogin(){
                     $("#warning").html("Username/Password Wrong!");
                 }
                 else{
-                    document.location = "welcome.php";
+                    window.location.replace("http://appreg.azurewebsites.net/welcome.php");
                 }  
             }
         });
