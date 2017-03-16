@@ -8,7 +8,6 @@ function validateLogin(){
                 console.log(response);
                 if(response == 0){
                     $("#warning").html("Username/Password Wrong!");
-                    window.location.reload();
                 }
                 else{
                      console.log("Finally we got here!");
