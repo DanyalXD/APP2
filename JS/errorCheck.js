@@ -9,8 +9,7 @@ function validateLogin(){
                     $("#warning").html("Username/Password Wrong!");
                 }
                 else{
-                    window.location.replace("welcome.php");
-                    location.reload(true);
+                    window.location.reload("welcome.php");
                 }  
             }
         });
