@@ -57,7 +57,6 @@ savePNGButton.addEventListener("click", function (event) {
         document.getElementById('pic').value = signaturePad.toDataURL();
         document.getElementById('pic2').value = localStorage.getItem("sig");
         document.getElementById('thName').value = localStorage.getItem("name2");
-        //document.getElementById("myForm").submit();
         formSubmit();   
     }
 });

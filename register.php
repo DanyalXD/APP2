@@ -2,7 +2,7 @@
 
 session_start();
 
-$conn = mysqli_connect("mysql4.gear.host", "app2", "Td2F5SV?46_U", "app2");
+$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
 
 var_dump($_POST);
 

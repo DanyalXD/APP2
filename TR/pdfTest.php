@@ -331,7 +331,7 @@ $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
 $pdf->Body();
-$root = $_SERVER['DOCUMENT_ROOT']."/APP/reports/";
+$root = $_SERVER['DOCUMENT_ROOT']."/APP2/reports/";
 $conn = mysqli_connect("localhost", "root", "", "app");
 
 $contractNo = $_POST["no"];

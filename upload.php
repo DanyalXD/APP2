@@ -19,7 +19,7 @@ if($_FILES['fileToUpload']['name'])
 			//move it to where we want it to be
 			move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $fileLocaton.$_FILES['fileToUpload']['name']);
 
-			$conn = mysqli_connect("mysql4.gear.host", "app2", "Td2F5SV?46_U", "app2");
+			$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
 
 			$report = $fileLocaton.$_FILES['fileToUpload']['name'];
 			$contractNo = $_POST['contractNumber'];
@@ -33,7 +33,7 @@ if($_FILES['fileToUpload']['name'])
 			VALUES ('$contractNo', '$report', '$date')";
 
 			if ($conn->multi_query($sql) === TRUE) {	
-    			header($rd);
+    			header("location: uploadDoc.php");
 			} else {
     			echo "Error: " . $sql . "<br>" . $conn->error;
 			}			

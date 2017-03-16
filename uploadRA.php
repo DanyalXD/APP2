@@ -1,8 +1,13 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['login_user']))
+if (!isset($_SESSION['login_user'])){
     header("Location: index.php");
+}
+if($_SESSION["accountType"] != "administrator"){
+	header("Location: welcome.php");
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -17,14 +22,14 @@ if (!isset($_SESSION['login_user']))
 
 <body>
 <div class = "header">
-	<img src = "img/logo.jpg">
+	<img src = "images/logo.jpg">
 </div>
 
 <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
     
-    Select report to upload: <input type="file" name="fileToUpload" id="fileToUpload" accept=".doc, .docx,"><br>
+    Select report to upload: <input type="file" name="fileToUpload" id="fileToUpload" accept="application/pdf"><br>
 	<?php
-		$conn = mysqli_connect("mysql4.gear.host", "app2", "Td2F5SV?46_U", "app2");
+		$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
 		if ($conn->connect_error) {
     		die("Connection failed: " . $conn->connect_error);
 		}
@@ -44,7 +49,6 @@ if (!isset($_SESSION['login_user']))
 	<input type="hidden" name ="fl" value="Risk Assessments/">
 	<input type="hidden" name ="db" value="risk">
 	<input type="hidden" name ="ft" value="risk">
-	<input type="hidden" name ="rd" value="location: uploadRA.php">
     <input type="submit" value="Upload Report" name="submit">
 </form>
 
