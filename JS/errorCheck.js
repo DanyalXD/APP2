@@ -5,12 +5,12 @@ function validateLogin(){
             type:'post',
             data:$('#login').serialize(),
             success:function(response){
-                if(response == 0){
-                    $("#warning").html("Username/Password Wrong!");
-                }
-                else{
-                    window.location.replace("http://appreg.azurewebsites.net/welcome.php");
-                }  
+                #if(response == 0){
+                    #$("#warning").html("Username/Password Wrong!");
+                #}
+               # else{
+                    window.location.replace("welcome.php");
+                #}  
             }
         });
     });
