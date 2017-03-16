@@ -10,6 +10,7 @@ function validateLogin(){
                     $("#warning").html("Username/Password Wrong!");
                 }
                 else{
+                     console.log("Finally we got here!");
                      window.location.href = "welcome.php";
                 }  
             }
