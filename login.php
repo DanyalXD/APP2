@@ -16,11 +16,10 @@
       
       $count = mysqli_num_rows($result);
 
-      if (!$count) {
-         return 0;
-      }
+      #if (!$count) {
+         #return 0;
+      #}
       if($count == 1) {
-         return 1;
          $_SESSION['login_user'] = $myusername;
          $_SESSION['accountType'] = $row["accountType"];
          $_SESSION['contract'] = $row["contractNo"];
