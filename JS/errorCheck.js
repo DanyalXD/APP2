@@ -5,7 +5,8 @@ function validateLogin(){
             type:'post',
             data:$('#login').serialize(),
             success:function(response){
-                if(response != 0){
+                alert("it worked");
+                if(response == 0){
                     $("#warning").html("Username/Password Wrong!");
                 }
                 else{
