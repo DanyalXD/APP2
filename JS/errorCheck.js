@@ -9,7 +9,7 @@ function validateLogin(){
                     $("#warning").html("Username/Password Wrong!");
                 }
                 else{
-                    window.location.replace("welcome.php");
+                     window.location.href = "welcome.php";
                 }  
             }
         });
