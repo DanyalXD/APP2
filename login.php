@@ -16,9 +16,6 @@
       
       $count = mysqli_num_rows($result);
 
-      if (!$count) {
-        echo "error";
-      }
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
          $_SESSION['accountType'] = $row["accountType"];
