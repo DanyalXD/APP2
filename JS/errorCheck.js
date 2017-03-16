@@ -7,9 +7,11 @@ function validateLogin(){
             success:function(response){
                 if(response == 0){
                     $("#warning").html("Username/Password Wrong!");
+                    alert(response);
                 }
                 else{
                     window.location.replace("welcome.php");
+                    alert(response);
                 }  
             }
         });
