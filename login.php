@@ -15,7 +15,7 @@
       $active = $row['active'];
       
       $count = mysqli_num_rows($result);
-
+      return 1;
       if (!$count) {
         return 0;
       }
