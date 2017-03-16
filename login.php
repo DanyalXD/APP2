@@ -17,14 +17,14 @@
       $count = mysqli_num_rows($result);
 
       if (!$count) {
-         return 0;
+        # return 0;
       }
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
          $_SESSION['accountType'] = $row["accountType"];
          $_SESSION['contract'] = $row["contractNo"];
       }else {
-         return 0;
+         #return 0;
       }
    }
 ?>
