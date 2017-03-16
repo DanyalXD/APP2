@@ -13,7 +13,7 @@ if (isset($_SESSION['login_user']))
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-<script src="js/jquery.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/errorCheck.js" type="text/javascript"></script>
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 </head>
