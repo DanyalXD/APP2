@@ -93,8 +93,101 @@ if (!isset($_SESSION['login_user']))
 					</tr>
 					<tr>
 						<td>Health and Safety coshh</td>
-						<td><a href='cosh/Health and safety policy anderson pest prevention.docx'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+						<td><a href='cosh/Health and safety policy anderson pest prevention.docx'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
 					</tr>
+					<tr>
+						<td>Aquapy</td>
+						<td><a href='cosh/Aquapy_apr08.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>cherry odour block</td>
+						<td><a href='cosh/cherry_odour_block.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Detex Blox</td>
+						<td><a href='cosh/Detex_Blox.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Digrain Control</td>
+						<td><a href='cosh/Digrain_Control lable.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Ficam data sheet </td>
+						<td><a href='cosh/Ficam_W data sheet.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Ficam Sachets label</td>
+						<td><a href='cosh/Ficam_W_Sachets label.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Fluorescent_Tracking_Dust</td>
+						<td><a href='cosh/Fluorescent_Tracking_Dust.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Gorilla wipes</td>
+						<td><a href='cosh/Gorilla wipes.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Insectaban Liquid mar11</td>
+						<td><a href='cosh/Insectaban_Liquid_mar11.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>K-Othrine WG250 02 08 12</td>
+						<td><a href='cosh/K-Othrine WG250 02 08 12.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Maxforce Quantum</td>
+						<td><a href='cosh/Maxforce_Quantum.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Maxforce Quantum aug11</td>
+						<td><a href='cosh/Maxforce_Quantum_aug11.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>nara bloc 2015</td>
+						<td><a href='cosh/nara_bloc_2015.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Phobi Dose</td>
+						<td><a href='cosh/Phobi_Dose.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>racumin_foam</td>
+						<td><a href='cosh/Aracumin_foam.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>rascal brod contact gel</td>
+						<td><a href='cosh/rascal_brod_contact_gel.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>redtop fly trap</td>
+						<td><a href='cosh/redtop fly trap.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>rotech_attractant</td>
+						<td><a href='cosh/rotech_attractant.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Silirub_2</td>
+						<td><a href='cosh/Silirub_2.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Solo Blox MSDS</td>
+						<td><a href='cosh/Solo_Blox_MSDS_-1115_-_GERMAN.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>spectrum lures</td>
+						<td><a href='cosh/spectrum_lures.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>Talon Pellets</td>
+						<td><a href='cosh/Talon_Pellets.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+					<tr>
+						<td>VULCAN P5 DP</td>
+						<td><a href='cosh/VULCAN_P5_DP.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a></td>
+					</tr>
+
 					</table>
 			</div>
 			<div>
