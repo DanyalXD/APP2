@@ -93,7 +93,7 @@ if (!isset($_SESSION['login_user']))
 					</tr>
 					<tr>
 						<td>Health and Safety coshh</td>
-						<td><a href='cosh/Health and safety policy anderson pest prevention.doc'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+						<td><a href='cosh/Health and safety policy anderson pest prevention.docx'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
 					</tr>
 					</table>
 			</div>
