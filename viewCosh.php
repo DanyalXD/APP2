@@ -91,6 +91,10 @@ if (!isset($_SESSION['login_user']))
 						<td>talon wax block coshh</td>
 						<td><a href='cosh/talon wax block coshh.doc'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
 					</tr>
+					<tr>
+						<td>Health and Safety coshh</td>
+						<td><a href='cosh/Health and safety policy anderson pest prevention.doc'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+					</tr>
 					</table>
 			</div>
 			<div>
