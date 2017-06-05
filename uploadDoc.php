@@ -28,6 +28,7 @@ if($_SESSION["accountType"] != "administrator"){
 <a href="uploadTR.php">Upload Treatment Report</a><br>
 <a href="uploadBL.php">Upload Bait Location</a><br>
 <a href="uploadRA.php">Upload Risk Assessment</a><br><br>
+<a href="uploadSP.php">Upload Site Plans</a><br><br>
 
 <a href="welcome.php">Return</a><br><br>
 

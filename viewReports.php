@@ -42,14 +42,18 @@ if (!isset($_SESSION['login_user']))
 				    $cnt = $_SESSION['contract'];
 					$sql = "SELECT * FROM risk WHERE contractNo = '$cnt'";
 					$sql1 = "SELECT * FROM bait WHERE contractNo = '$cnt'";
+					$sql2 = "SELECT * FROM siteplans WHERE contractNo = '$cnt'";
 					$result = $conn->query($sql);
 					$result1 = $conn->query($sql1);
+					$result2 = $conn->query($sql2);
 				    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 				    $row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC);
+				    $row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
 
 				if($_SESSION['accountType'] == "customer"){
 					echo "<li><a href='".$row["risk"]."' accesskey='3'>View RA</a><br></li>";
 					echo "<li><a href='".$row1["bait"]."' accesskey='3'>View BL</a><br></li>";
+					echo "<li><a href='".$row2["sitePlan"]."' accesskey='3'>View SP</a><br></li>";
 					} 
 				?>
 				<li><a href="viewCosh.php" accesskey="3" title="">View Coshh</a></li>
