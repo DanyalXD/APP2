@@ -53,7 +53,7 @@ if (!isset($_SESSION['login_user']))
 				if($_SESSION['accountType'] == "customer"){
 					echo "<li><a href='".$row["risk"]."' accesskey='3'>View RA</a><br></li>";
 					echo "<li><a href='".$row1["bait"]."' accesskey='3'>View BL</a><br></li>";
-					echo "<li><a href='".$row2["sitePlan"]."' accesskey='3'>View BL</a><br></li>";
+					echo "<li><a href='".$row2["sitePlan"]."' accesskey='3'>View SP</a><br></li>";
 					} 
 				?>
 				<li><a href="viewCosh.php" accesskey="3" title="">View Coshh</a></li>
