@@ -35,7 +35,7 @@ if (!isset($_SESSION['login_user']))
 					<li><a href="uploadDoc.php" accesskey="2" title="">Upload Doc</a></li>
 				<?php 
 					} 
-					$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
+					$conn = mysqli_connect("mysql4.gear.host", "appdbv3", "Da3hm-9X-U75", "appdbv3");
 					if ($conn->connect_error) {
 					    die("Connection failed: " . $conn->connect_error);
 					}
