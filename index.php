@@ -23,7 +23,7 @@ if (isset($_SESSION['login_user']))
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a href="#">APP</a></h1>
+				<a href="welcome.php"><img src="images/lgo3.png" height="100" width="180"></a>
 			</div>
 			<div id="menu">
 			</div>
