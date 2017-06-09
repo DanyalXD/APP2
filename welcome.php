@@ -5,7 +5,6 @@ if (!isset($_SESSION['login_user']))
     header("Location: index.php");
 
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,6 +16,45 @@ if (!isset($_SESSION['login_user']))
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/errorCheck.js" type="text/javascript"></script>
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    height: 100%;
+}
+
+.dropdown:hover .dropbtn {
+    	background: rgba(0,0,0,0.70);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
 </head>
 <body>
 
@@ -24,18 +62,20 @@ if (!isset($_SESSION['login_user']))
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a href="welcome.php">APP</a></h1>
+				<a href="welcome.php"><img src="images/lgo3.png" height="100" width="180"></a>
 			</div>
 			<div id="menu">
 				<ul>
+			    <li><a href="viewCosh.php" accesskey="3" title="">View Coshh</a></li>
 				<?php
 					if($_SESSION['accountType'] == "administrator"){
 				?>
-					<li><a href="TR/index.php" accesskey="2" title="">Write TR</a></li>
 					<li><a href="uploadDoc.php" accesskey="2" title="">Upload Doc</a></li>
-				<?php 
+                    <li><a href="viewReports.php" accesskey="3" title="">Treatment Reports</a></li>
+	
+					<?php 
 					} 
-					$conn = mysqli_connect("mysql4.gear.host", "appdbv3", "Da3hm-9X-U75", "appdbv3");
+					$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
 					if ($conn->connect_error) {
 					    die("Connection failed: " . $conn->connect_error);
 					}
@@ -51,13 +91,18 @@ if (!isset($_SESSION['login_user']))
 				    $row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
 
 				if($_SESSION['accountType'] == "customer"){
-					echo "<li><a href='".$row["risk"]."' accesskey='3'>View RA</a><br></li>";
-					echo "<li><a href='".$row1["bait"]."' accesskey='3'>View BL</a><br></li>";
-					echo "<li><a href='".$row2["sitePlan"]."' accesskey='3'>View SP</a><br></li>";
+					
+					echo	"<li><div class='dropdown'>";
+					echo    	 "<a href='#' class='dropbtn'>Documents</a>";
+					echo    	 "<div class='dropdown-content'>";
+					echo      		"<a href='viewReports.php'>Treatment Reports</a>";
+					echo 			"<a href='".$row["risk"]."' accesskey='3'>View RA</a><br>";
+					echo 			"<a href='".$row1["bait"]."' accesskey='3'>View BL</a>";
+					echo      		"<a href='".$row2["sitePlan"]."'>Site Plan</a>";
+					echo    	"</div>";
+					echo 	"</div></li>";
 					} 
 				?>
-				<li><a href="viewCosh.php" accesskey="3" title="">View Coshh</a></li>
-				<li><a href="viewReports.php" accesskey="3" title="">View TR</a></li>
 				</ul>
 			</div>
 		</div>
