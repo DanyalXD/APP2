@@ -97,8 +97,8 @@ if (!isset($_SESSION['login_user']))
 					echo    	 "<a href='#' class='dropbtn'>Documents</a>";
 					echo    	 "<div class='dropdown-content'>";
 					echo      		"<a href='viewReports.php'>Treatment Reports</a>";
-					echo 			"<a href='".$row["risk"]."' accesskey='3'>View RA</a><br>";
-					echo 			"<a href='".$row1["bait"]."' accesskey='3'>View BL</a>";
+					echo 			"<a href='".$row["risk"]."' accesskey='3'>Risk Assessment</a><br>";
+					echo 			"<a href='".$row1["bait"]."' accesskey='3'>Bait Location</a>";
 					echo      		"<a href='".$row2["sitePlan"]."'>Site Plan</a>";
 					echo    	"</div>";
 					echo 	"</div></li>";
