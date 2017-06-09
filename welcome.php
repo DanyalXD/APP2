@@ -70,7 +70,7 @@ if (!isset($_SESSION['login_user']))
 				<?php
 					if($_SESSION['accountType'] == "administrator"){
 				?>
-					<li><a href="uploadDoc.php" accesskey="2" title="">Upload Doc</a></li>
+					<li><a href="uploadDoc.php" accesskey="2" title="">Upload Document</a></li>
                     <li><a href="viewReports.php" accesskey="3" title="">Treatment Reports</a></li>
 	
 					<?php 
