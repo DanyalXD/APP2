@@ -15,6 +15,7 @@ if($_SESSION["accountType"] != "administrator"){
 
 <head>
 	<title>APP Login</title>
+	<link rel="icon" href="images/icon.png">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>

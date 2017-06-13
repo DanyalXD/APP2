@@ -15,6 +15,7 @@ if($_SESSION["accountType"] != "administrator"){
 <head>
 	<title>APP Login</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/icon.png">
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/errorCheck.js" type="text/javascript"></script>
 </head>
