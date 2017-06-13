@@ -27,7 +27,7 @@ if($_FILES['fileToUpload']['name'])
 
 			$db = $_POST["db"];
 			$ft = $_POST["ft"];
-			$rd = $_POST["rd"];
+			#$rd = $_POST["rd"];
 
 			$sql = "INSERT INTO $db (contractNo, $ft, date)
 			VALUES ('$contractNo', '$report', '$date')";
