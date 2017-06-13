@@ -113,7 +113,7 @@ if (!isset($_SESSION['login_user']))
 			<div id="box1">
 				<h2 class="title"><a href="#">Treatment Reports</a></h2><br><br>
 					<?php
-				$conn = mysqli_connect("mysql4.gear.host", "app2", "Dm9WQ2V4~-TG", "app2");
+				$conn = mysqli_connect("mysql4.gear.host", "appdbv3", "Da3hm-9X-U75", "appdbv3");
 				if ($conn->connect_error) {
 				    die("Connection failed: " . $conn->connect_error);
 				}
