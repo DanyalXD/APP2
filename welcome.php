@@ -55,6 +55,9 @@ if (!isset($_SESSION['login_user']))
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.space{
+	margin-bottom: 0;
+}
 </style>
 </head>
 <body>
@@ -117,6 +120,9 @@ if (!isset($_SESSION['login_user']))
 					We offer a unique paperless system where you can access your pest control inspections 24/7 from anywhere there will also be a mobile app.
 
 					All your reports, quotations, coshh, safety data sheets, rams, hygiene issues, proofing issues and environmental risk assements will be available all on your own hub rather than compiled in a folder</p>
+				<img src="images/md.jpg" height="150" width="120">
+				<p class="space">David Anderson</p>
+				<p>Managing Director</p>
 			</div>
 			<div>
 
