@@ -19,7 +19,12 @@ if (isset($_SESSION['login_user']))
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+<style>
+.space{
+	margin-bottom: 0;
+}
 
+</style>
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header" class="container">
@@ -38,7 +43,10 @@ if (isset($_SESSION['login_user']))
 
 					We offer a unique paperless system where you can access your pest control inspections 24/7 from anywhere there will also be a mobile app.
 
-					All your reports, quotations, coshh, safety data sheets, rams, hygiene issues, proofing issues and environmental risk assements will be available all on your own hub rather than compiled in a folder</p>
+					All your reports, quotations, coshh, safety data sheets, rams, hygiene issues, proofing issues and environmental risk assements will be available all on your own hub rather than compiled in a folder.</p><br>
+				<img src="images/md.jpg" height="150" width="120">
+				<p class="space">David Anderson</p>
+				<p>Managing Director</p>
 			</div>
 			<div>
 			</div>
