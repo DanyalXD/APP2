@@ -131,9 +131,10 @@ if (!isset($_SESSION['login_user']))
 				<?php
 				if ($result->num_rows > 0) {
 				    // output data of each row
+				    echo "<h2>".$_SESSION['login_user']."</h2><br>";
 				    while($row = $result->fetch_assoc()) {
 				    	echo "<tr>";
-				    	echo "<td>".$row["contractNo"]."</td>";
+				    	echo "<td>".$row["visitType"]."</td>";
 				    	echo "<td><a href='".$row["report"]."'><img border='0' alt='W3Schools' src='images/pdf-icon.png' width='45' height='45'</a></td>";
 				    	echo "<td>".$row["date"]."</td>";
 				    	echo "</tr>";
