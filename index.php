@@ -21,7 +21,7 @@ if (isset($_SESSION['login_user']))
 <body>
 <style>
 .space{
-	margin-bottom: 0;
+	margin-bottom: 0; 
 }
 
 </style>

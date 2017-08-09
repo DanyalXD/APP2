@@ -30,7 +30,7 @@ if($_SESSION["accountType"] != "administrator"){
     
     Select report to upload: <input type="file" name="fileToUpload" id="fileToUpload" accept="application/pdf"><br>
 	<?php
-		$conn = mysqli_connect("mysql4.gear.host", "appdbv3", "Da3hm-9X-U75", "appdbv3");
+		$conn = mysqli_connect("mysql5.gear.host", "app4", "Oo0dn-g0s?Dh", "app4");
 		if ($conn->connect_error) {
     		die("Connection failed: " . $conn->connect_error);
 		}
