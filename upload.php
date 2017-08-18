@@ -23,14 +23,24 @@ if($_FILES['fileToUpload']['name'])
 
 			$report = $fileLocaton.$_FILES['fileToUpload']['name'];
 			$contractNo = $_POST['contractNumber'];
+			$visitType = $_POST['visitType'];
 			$date = date("d/m/Y");
 
 			$db = $_POST["db"];
 			$ft = $_POST["ft"];
 			$rd = $_POST["rd"];
 
-			$sql = "INSERT INTO $db (contractNo, $ft, date)
-			VALUES ('$contractNo', '$report', '$date')";
+
+			if($db == "reports"){
+				$sql = "INSERT INTO $db (contractNo, $ft, visitType, date)
+				VALUES ('$contractNo', '$report', '$visitType', '$date')";
+			}
+			else{
+				$sql = "INSERT INTO $db (contractNo, $ft, date)
+				VALUES ('$contractNo', '$report', '$date')";
+
+			}
+
 
 			if ($conn->multi_query($sql) === TRUE) {	
     			header("location: uploadDoc.php");
