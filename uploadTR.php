@@ -47,6 +47,13 @@ if($_SESSION["accountType"] != "administrator"){
    	}
  	$conn->close();
 	?>
+	<select name = "visitType">
+		<option value="Routine">Routine</option>
+		<option value="Follow Up">Follow Up</option>
+		<option value="Call Out">Call Out</option>
+		<option value="Job">Job</option>
+		<option value="EFK">EFK</option>
+	</select>
 	<input type="hidden" name ="fl" value="Reports/">
 	<input type="hidden" name ="db" value="reports">
 	<input type="hidden" name ="ft" value="report">
