@@ -47,7 +47,7 @@ if($_SESSION["accountType"] != "administrator"){
    	}
  	$conn->close();
 	?>
-	<select name = "visitType">
+	<select name="visitType">
 		<option value="Routine">Routine</option>
 		<option value="Follow Up">Follow Up</option>
 		<option value="Call Out">Call Out</option>
