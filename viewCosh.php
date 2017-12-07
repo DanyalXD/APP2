@@ -101,7 +101,7 @@ if (!isset($_SESSION['login_user']))
 					echo 			"<a href='".$row["risk"]."' accesskey='3'>Risk Assessment</a><br>";
 					echo 			"<a href='".$row1["bait"]."' accesskey='3'>Bait Location</a>";
 					echo      		"<a href='".$row2["sitePlan"]."'>Site Plan</a>";
-					echo      		"<a href='viewCertificates.php'>Site Plan</a>";
+					echo      		"<a href='viewCertificates.php'>Certificates</a>";
 					echo    	"</div>";
 					echo 	"</div></li>";
 					} 
