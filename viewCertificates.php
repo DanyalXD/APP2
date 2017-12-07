@@ -5,6 +5,7 @@ if (!isset($_SESSION['login_user']))
     header("Location: index.php");
 
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -54,9 +55,6 @@ if (!isset($_SESSION['login_user']))
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-.space{
-	margin-bottom: 0;
 }
 </style>
 </head>
@@ -115,18 +113,27 @@ if (!isset($_SESSION['login_user']))
 	<div id="page" class="container">
 		<div id="content">
 			<div id="box1">
-				<h2 class="title"><a href="#">Anderson Pest Prevention</a></h2>
-				<p>Kingston on spey based company offering quality pest control services.
-
-					We offer a unique paperless system where you can access your pest control inspections 24/7 from anywhere there will also be a mobile app.
-
-					All your reports, quotations, coshh, safety data sheets, rams, hygiene issues, proofing issues and environmental risk assements will be available all on your own hub rather than compiled in a folder.</p><br>
-				<img src="images/md.jpg" height="150" width="120">
-				<p class="space">David Anderson</p>
-				<p>Managing Director</p>
+				<h2 class="title"><a href="#">Coshh</a></h2><br><br>
+					<table style="width:100%">
+					<tr>
+						<td>NPTA</td>
+						<td><a href='images/DOC150617-134417.pdf'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+					</tr>
+					<tr>
+						<td>Tradesman Insurance</td>
+						<td><a href='images/img_0879.JPG'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+					</tr>
+					<tr>
+						<td>RSPH</td>
+						<td><a href='images/image1.png'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+					</tr>
+					<tr>
+						<td>Control of Polution</td>
+						<td><a href='images/IMG_1346.jpg'><img border='0' alt='W3Schools' src='images/word.png' width='45' height='45'</a</td>
+					</tr>
+			</table>
 			</div>
 			<div>
-
 			</div>
 		</div>
 		<div id="sidebar">
